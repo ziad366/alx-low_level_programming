@@ -17,7 +17,7 @@ char *concatStr;
 
 if (s1 != NULL)
 {
-while (s1[i] != '/0')
+while (s1[i] != '\0')
 {
 i++;
 }
@@ -25,7 +25,7 @@ i++;
 
 if (s2 != NULL)
 {
-while (s2[j] != '/0')
+while (s2[j] != '\0')
 {
 j++;
 }
@@ -43,7 +43,7 @@ for (counter = 0; counter < i; counter++)
 concatStr[counter] = s1[i];
 }
 
-for (counter; counter < (i + j); counter++)
+for (; counter < (i + j); counter++)
 {
 concatStr[counter] = s2[j];
 }
