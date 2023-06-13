@@ -13,7 +13,7 @@
 
 char *_strdup(char *str)
 {
-int length = 0, i = 0;
+int length = 0, i;
 char *copy;
 
 if (str == NULL)
@@ -27,7 +27,8 @@ length++;
 }
 
 copy = (char *)malloc(sizeof(char) * length);
-for (i; i < length; i++)
+
+for (i = 0; i < length; i++)
 {
 copy[i] = str[i];
 }
