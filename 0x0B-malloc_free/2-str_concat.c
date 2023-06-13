@@ -23,9 +23,9 @@ i++;
 }
 }
 
-if (s1 != NULL)
+if (s2 != NULL)
 {
-while (s1[j] != '/0')
+while (s2[j] != '/0')
 {
 j++;
 }
