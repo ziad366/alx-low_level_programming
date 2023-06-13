@@ -21,7 +21,7 @@ if (str == NULL)
 return (NULL);
 }
 
-while (str[length] != "\0")
+while (str[length] != '\0')
 {
 length++;
 }
@@ -31,7 +31,7 @@ for (i; i < length; i++)
 {
 copy[i] = str[i];
 }
-copy[length] = "\0";
+copy[length] = '\0';
 
 return (copy);
 }
