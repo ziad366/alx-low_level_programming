@@ -3,7 +3,8 @@
 #include "main.h"
 
 /**
- * create_array - create an array of chars, and initializes it with a specific char.
+ * create_array - create an array of chars,
+ * and initializes it with a specific char.
  * @c: character to fill the array with it
  * @size: the size of the memory to allocate
  *
@@ -21,6 +22,12 @@ return (NULL);
 }
 
 arr = (char *)malloc(sizeof(char) * size);
+
+if (arr == NULL)
+{
+return (NULL);
+}
+
 for (i = 0; i < size; i++)
 {
 arr[i] = c;
