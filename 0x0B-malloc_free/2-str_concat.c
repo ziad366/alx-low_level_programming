@@ -12,7 +12,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-int i = 0, j = 0, counter;
+int i = 0, j = 0, k = 0, counter;
 char *concatStr;
 
 if (s1 != NULL)
@@ -40,12 +40,13 @@ return (NULL);
 
 for (counter = 0; counter < i; counter++)
 {
-concatStr[counter] = s1[i];
+concatStr[counter] = s1[counter];
 }
 
 for (; counter < (i + j); counter++)
 {
-concatStr[counter] = s2[j];
+concatStr[counter] = s2[k];
+k++;
 }
 
 concatStr[i + j] = '\0';
